@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daniel's Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Audio Autoplay -->
+  <audio autoplay>
+    <source src="intro/intro.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    Happy birthday Daniel
+  </header>
+
+  <main>
+    <div class="left-column">
+      <button onclick="changeVideo('https://www.youtube.com/embed/3S3B4GvQ3Wk')">Sacraments</button>
+      <button onclick="changeVideo('https://www.youtube.com/embed/yv6HVd6E1p8')">Creed</button>
+      <button onclick="changeVideo('https://www.youtube.com/embed/TxpQDcYHhHg')">Commandments</button>
+      <button onclick="changeVideo('https://www.youtube.com/embed/LUHc2fTE_fo')">Lent</button>
+      <button onclick="changeVideo('https://www.youtube.com/embed/3yvhn6cF1OU')">Mother Mary</button>
+      <button onclick="changeVideo('https://www.youtube.com/embed/eN1EVXcUAfA')">Questions</button>
+      <button onclick="changeVideo('https://www.youtube.com/embed/ohF3buBgW3M')">Stories</button>
+    </div>
+
+    <div class="right-column">
+      <iframe id="videoFrame" src="https://www.youtube.com/embed/3S3B4GvQ3Wk" allowfullscreen></iframe>
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Daniel
+  </footer>
+
+  <script>
+    function changeVideo(url) {
+      document.getElementById('videoFrame').src = url;
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
 
