@@ -59,3 +59,62 @@ footer {
   padding: 1rem;
 }
 
+/* ========== Responsive Design ========== */
+
+/* Tablets (max-width: 992px) */
+@media screen and (max-width: 992px) {
+  main {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .left-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-column button {
+    width: 45%;
+    margin: 5px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
+
+/* Mobile Devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .left-column button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
