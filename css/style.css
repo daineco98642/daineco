@@ -99,7 +99,8 @@ footer {
 
   .left-column {
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 500px !important;
+    min-width: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
