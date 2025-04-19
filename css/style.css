@@ -102,7 +102,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
-    min-width: 100px;
+    min-width: 300px;
     max-width: 500px;
   }
 
