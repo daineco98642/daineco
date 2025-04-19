@@ -98,12 +98,11 @@ footer {
   }
 
   .left-column {
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
-    min-width: 300px;
-    max-width: 500px;
+    gap: 8px;    
   }
 
   .left-column button {
