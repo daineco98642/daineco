@@ -8,14 +8,15 @@
 <body>
 
   <!-- Audio Autoplay -->
-  <audio autoplay>
+  <header onclick="document.getElementById('introAudio').play()" style="cursor: pointer;">
+    🎉 Happy Birthday Daniel 🎉
+  </header>
+  
+  <audio id="introAudio">
     <source src="intro/intro.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
-
-  <header>
-    Happy birthday Daniel
-  </header>
+  
 
   <main>
     <div class="left-column">
