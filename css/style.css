@@ -19,6 +19,8 @@ main {
 
 .left-column {
   flex: 0 0 auto;
+  max-width: 20%;
+  min-width: 100px;
   background-color: #f4f4f4;
   padding: 1rem;
   box-sizing: border-box;
