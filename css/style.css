@@ -23,8 +23,8 @@ main {
 
 .left-column {
   flex: 0 0 150px;
-  max-width: 300px;
-  min-width: 100px;
+  max-width: none;
+  min-width: none;
   background-color: #f4f4f4;
   padding: 0.15rem;
   box-sizing: border-box;
