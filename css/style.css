@@ -18,7 +18,7 @@ main {
 }
 
 .left-column {
-  width: 30%;
+  flex: 0 0 auto;
   background-color: #f4f4f4;
   padding: 1rem;
   box-sizing: border-box;
@@ -41,7 +41,7 @@ main {
 }
 
 .right-column {
-  width: 70%;
+  flex: 1;
   padding: 1rem;
   box-sizing: border-box;
 }
